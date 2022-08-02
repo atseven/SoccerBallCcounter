@@ -1,0 +1,11 @@
+Flask==1.1.1
+pyttsx3==2.90
+requests==2.23.0
+gunicorn==19.9.0
+numpy>=1.9.2
+matplotlib>=1.4.3
+Pandas>=0.19
+opencv-python==4.6.0
+scipy==1.7.3
+plotly==5.6.0
+imutils==0.5.4
