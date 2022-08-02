@@ -179,8 +179,8 @@ def ballCount():
 
                 # Press Q on keyboard to exit. 
                 # waitkey is how long to show in ms frame
-                if cv2.waitKey(1) & 0xFF == ord('q'):
-                    break
+#                 if cv2.waitKey(1) & 0xFF == ord('q'):
+#                     break
                 #elif cv2.waitKey(10) == ord(' '):
                 #    y_centers = []
                 #    count = '0'
