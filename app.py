@@ -195,7 +195,7 @@ def ballCount():
         cap.release()
         # if capture_video:
         #     out.release()
-        cv2.destroyAllWindows()
+#         cv2.destroyAllWindows()
 
         if int(total_count)//4 > dur:
             return str(int(total_count)//4)
