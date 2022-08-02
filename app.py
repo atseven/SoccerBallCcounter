@@ -6,7 +6,7 @@ from scipy.signal import find_peaks
 from scipy.signal import savgol_filter
 import plotly.express as px
 import plotly.graph_objects as go
-import pyttsx3
+# import pyttsx3
 from threading import Thread
 from flask import Flask, request, send_file
 
@@ -28,17 +28,17 @@ def ballCount():
         print(video_path)
         # Threading Class
         # https://github.com/nateshmbhat/pyttsx3/issues/8
-        class Threader(Thread):
-            def __init__(self, *args, **kwargs):
-                Thread.__init__(self, *args, **kwargs)
-                self.daemon = True
-                self.start()
+#         class Threader(Thread):
+#             def __init__(self, *args, **kwargs):
+#                 Thread.__init__(self, *args, **kwargs)
+#                 self.daemon = True
+#                 self.start()
 
-            def run(self):
-                tts_engine = pyttsx3.init()
-                tts_engine.setProperty('rate', 250)
-                tts_engine.say(self._args)
-                tts_engine.runAndWait()
+#             def run(self):
+#                 tts_engine = pyttsx3.init()
+#                 tts_engine.setProperty('rate', 250)
+#                 tts_engine.say(self._args)
+#                 tts_engine.runAndWait()
 
         # curtosy of https://github.com/Enoooooormousb
         def ball_finder(frame, hsv_lower, hsv_upper):
