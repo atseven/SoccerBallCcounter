@@ -1,5 +1,6 @@
 Flask==1.1.1
 requests==2.23.0
+opencv-python-headless
 gunicorn==19.9.0
 numpy>=1.9.2
 matplotlib>=1.4.3
